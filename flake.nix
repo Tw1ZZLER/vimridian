@@ -130,7 +130,7 @@
           };
         in
         rec {
-	  # actual package outputs are here
+          # actual package outputs are here
           minimal.default = mnw.lib.wrap pkgs minimalConfig;
           minimal.dev = minimal.default.devMode;
 

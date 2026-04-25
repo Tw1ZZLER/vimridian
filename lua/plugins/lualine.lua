@@ -2,6 +2,6 @@
 return {
     "lualine.nvim",
     after = function()
-	require('lualine').setup()
+        require('lualine').setup()
     end
 }
