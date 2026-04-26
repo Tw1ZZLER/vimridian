@@ -103,7 +103,7 @@
                 # you can use lib.fileset to reduce rebuilds here
                 # https://noogle.dev/f/lib/fileset/toSource
                 pure = ./.;
-                impure = "~/proj/nvim-config";
+                impure = "~/proj/vimridian";
               };
             };
           };
