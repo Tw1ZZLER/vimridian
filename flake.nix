@@ -70,8 +70,8 @@
                 # Lazy-loading library, an alternative to lazy.nvim
                 lz-n
 
-                # devicons dependency for lualine, telescope and others
-                nvim-web-devicons
+                # icons dependency for lualine, telescope and others
+                mini-icons
 
                 # install ALL THE GRAMMARS!!!
                 # we dont actually need nvim-treesitter bc we are doing this
