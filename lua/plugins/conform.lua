@@ -44,6 +44,13 @@ return {
 				-- Conform will run the first available formatter
 				-- javascript = { "prettierd", "prettier", stop_after_first = true },
 			},
+			formatters = {
+				injected = { options = { ignore_errors = true } },
+				-- # Example of using shfmt with extra args
+				-- shfmt = {
+				--   prepend_args = { "-i", "2", "-ci" },
+				-- },
+			},
 		})
 	end,
 }
