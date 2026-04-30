@@ -97,6 +97,9 @@
 
                 # Git integration for buffers
                 gitsigns-nvim
+
+                # File explorer
+                oil-nvim
               ];
 
               dev.myConfig = {
