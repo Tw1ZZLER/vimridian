@@ -70,9 +70,6 @@
                 # Lazy-loading library, an alternative to lazy.nvim
                 lz-n
 
-                # icons dependency for lualine, telescope and others
-                mini-icons
-
                 # install ALL THE GRAMMARS!!!
                 # we dont actually need nvim-treesitter bc we are doing this
                 # and the built-in vim.treesitter will handle it
@@ -82,6 +79,9 @@
 
               # Anything that you're loading lazily should be put here
               opt = [
+                # mini-nvim library
+                mini-nvim
+
                 # Colorscheme
                 catppuccin-nvim
 
