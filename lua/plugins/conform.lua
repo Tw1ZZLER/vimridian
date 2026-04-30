@@ -5,6 +5,13 @@ return {
 	"conform.nvim",
 	keys = {
 		{
+			"<leader>cf",
+			function()
+				require("conform").format({ timeout_ms = 3000 })
+			end,
+			desc = "Format",
+		},
+		{
 			"<leader>cF",
 			function()
 				require("conform").format({ formatters = { "injected" }, timeout_ms = 3000 })
