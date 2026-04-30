@@ -106,6 +106,9 @@
 
                 # File explorer
                 oil-nvim
+
+                # Image support, dashboard, zen mode, picker, fuzzy finder, lazygit and GH CLI support, etc.
+                snacks-nvim
               ];
 
               dev.myConfig = {
