@@ -56,12 +56,12 @@
             initLua = builtins.readFile ./init.lua;
 
             extraBinPath = with pkgs; [
-              # fzf-lua dependencies
-              fzf # WHAT!!!
+              fzf # fuzzy finder
               fd # better find utility
               ripgrep # better grep utility
               bat # better syntax highlighting in native previewer
               delta # better syntax highlighting for git
+              lazygit # git client
             ];
 
             # Plugins loaded on startup should be here
@@ -87,10 +87,6 @@
 
                 # Statusline
                 lualine-nvim
-
-                # Fuzzy finder
-                # (Chosen for having a noticable speed increase over telescope)
-                fzf-lua
 
                 # Surround editing
                 mini-surround
