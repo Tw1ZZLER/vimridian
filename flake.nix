@@ -92,6 +92,12 @@
                 # (Chosen for having a noticable speed increase over telescope)
                 fzf-lua
 
+                # Surround editing
+                mini-surround
+
+                # Autopairs
+                mini-pairs
+
                 # Which Key helps identify shortcuts
                 which-key-nvim
 
