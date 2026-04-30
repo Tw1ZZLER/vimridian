@@ -5,6 +5,7 @@ local map = vim.keymap.set
 
 -- Leader key
 vim.g.mapleader = " "
+vim.g.maplocalleader = ","
 
 -- commenting
 map("n", "gco", "o<esc>Vcx<esc><cmd>normal gcc<cr>fxa<bs>", { desc = "Add Comment Below" })
