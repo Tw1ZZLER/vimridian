@@ -128,6 +128,9 @@
               ++ (with pkgs.vimPlugins; [
                 # Formatting
                 conform-nvim
+
+                # Mega advanced search and replace
+                grug-far-nvim
               ]);
           };
         in
