@@ -13,7 +13,7 @@ return {
     keys = {
         -- grep, command history, files (super shortcuts)
         { "<leader>/", "<cmd>FzfLua live_grep<cr>", desc = "Live Grep" },
-        { "<leader>:", "<cmd>FzfLua command_history<cr>", desc = "Command History" },
+        { "<leader>;", "<cmd>FzfLua command_history<cr>", desc = "Command History" },
         { "<leader><space>", "<cmd>FzfLua files<cr>", desc = "Find Files" },
 
         -- find

@@ -7,6 +7,9 @@ local map = vim.keymap.set
 vim.g.mapleader = " "
 vim.g.maplocalleader = ","
 
+-- disable really annoying command history keybind
+map("n", "q:", "<nop>")
+
 -- commenting
 map("n", "gco", "o<esc>Vcx<esc><cmd>normal gcc<cr>fxa<bs>", { desc = "Add Comment Below" })
 map("n", "gcO", "O<esc>Vcx<esc><cmd>normal gcc<cr>fxa<bs>", { desc = "Add Comment Above" })
