@@ -1,7 +1,7 @@
 -- Sources our config files under lua/config on startup
-require('config.options')
-require('config.keybinds')
-require('config.autocmds')
+require("config.options")
+require("config.keybinds")
+require("config.autocmds")
 
 -- Get lz.n going
 -- defines LZN as the variable for calling LZN functions
