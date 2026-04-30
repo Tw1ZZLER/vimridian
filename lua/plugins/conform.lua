@@ -3,6 +3,16 @@
 -- credit: https://github.com/stevearc/conform.nvim#installation
 return {
 	"conform.nvim",
+	keys = {
+		{
+			"<leader>cF",
+			function()
+				require("conform").format({ formatters = { "injected" }, timeout_ms = 3000 })
+			end,
+			mode = { "n", "x" },
+			desc = "Format Injected Langs",
+		},
+	},
 	after = function()
 		require("conform").setup({
 			default_format_opts = {
@@ -16,6 +26,7 @@ return {
 				timeout_ms = 500,
 				lsp_format = "fallback",
 			},
+			-- ADD FORMATTERS HERE!!!
 			formatters_by_ft = {
 				lua = { "stylua" },
 				nix = { "nixfmt" },
