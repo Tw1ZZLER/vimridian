@@ -1,4 +1,5 @@
 -- Which Key helps you remember keyboard shortcuts
+-- credit: https://www.lazyvim.org/plugins/editor#which-keynvim
 return {
   "which-key.nvim",
   after = function() 

@@ -1,3 +1,4 @@
+-- credit: https://github.com/nvim-lualine/lualine.nvim/issues/1378
 return {
     'mini.nvim',
     after = function()
