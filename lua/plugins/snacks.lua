@@ -5,17 +5,16 @@ return {
     lazy = false,
     after = function()
         require("snacks.nvim").setup({
-            picker = { enabled = false },
+            picker = { enabled = true },
             bigfile = { enabled = true },
             dashboard = { enabled = true },
-            explorer = { enabled = true },
+            explorer = { enabled = false }, -- oil is favored
             indent = { enabled = true },
             input = { enabled = true },
             notifier = {
                 enabled = true,
                 timeout = 3000,
             },
-            picker = { enabled = true },
             quickfile = { enabled = true },
             scope = { enabled = true },
             scroll = { enabled = true },
@@ -36,7 +35,6 @@ return {
         { "<leader>/", function() Snacks.picker.grep() end, desc = "Grep" },
         { "<leader>:", function() Snacks.picker.command_history() end, desc = "Command History" },
         { "<leader>n", function() Snacks.picker.notifications() end, desc = "Notification History" },
-        { "<leader>e", function() Snacks.explorer() end, desc = "File Explorer" },
         -- find
         { "<leader>fb", function() Snacks.picker.buffers() end, desc = "Buffers" },
         { "<leader>fc", function() Snacks.picker.files({ cwd = vim.fn.stdpath("config") }) end, desc = "Find Config File" },
