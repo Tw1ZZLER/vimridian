@@ -3,16 +3,15 @@
 return {
     "nvim-lspconfig",
     lazy = false,
-
     before = function()
         local on_attach = function(client, bufnr)
             local opts = { noremap = true, silent = true, buffer = bufnr }
 
-            vim.keymap.set("v", "F", vim.lsp.buf.format, opts)
-            vim.keymap.set("n", "<leader>F", vim.lsp.buf.format, opts)
-            vim.keymap.set("n", "<leader>k", vim.diagnostic.open_float, opts)
-            vim.keymap.set("n", "<space>q", vim.diagnostic.setloclist, opts)
-            vim.keymap.set("n", "gD", vim.lsp.buf.type_definition, opts)
+            -- vim.keymap.set("v", "F", vim.lsp.buf.format, opts)
+            -- vim.keymap.set("n", "<leader>F", vim.lsp.buf.format, opts)
+            -- vim.keymap.set("n", "<leader>k", vim.diagnostic.open_float, opts)
+            -- vim.keymap.set("n", "<space>q", vim.diagnostic.setloclist, opts)
+            -- vim.keymap.set("n", "gD", vim.lsp.buf.type_definition, opts)
         end
 
         vim.lsp.config("*", {
@@ -22,6 +21,26 @@ return {
     end,
 
     after = function()
+        -- Vim diagnostic configuration
+        vim.diagnostic.config{
+            virtual_text = false, -- tiny inline diagnostic does this instead
+            underline = true,
+            signs = {
+                text = {
+                    [vim.diagnostic.severity.ERROR] = "",
+                    [vim.diagnostic.severity.WARN]  = "",
+                    [vim.diagnostic.severity.INFO]  = "",
+                    [vim.diagnostic.severity.HINT]  = "",
+                },
+                linehl = {
+                    [vim.diagnostic.severity.ERROR] = 'ErrorMsg',
+                },
+                numhl = {
+                    [vim.diagnostic.severity.WARN] = 'WarningMsg',
+                },
+            },
+        }
+
         -- Lua
         vim.lsp.enable("lua_ls")
 
