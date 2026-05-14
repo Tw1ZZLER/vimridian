@@ -143,6 +143,9 @@
             # LSP
             nvim-lspconfig
 
+            # Better diagnostics display UI
+            tiny-inline-diagnostic-nvim
+
             # Completion
             blink-cmp
             lspkind-nvim
