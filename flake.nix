@@ -65,8 +65,6 @@
             # Lazy-loading library, an alternative to lazy.nvim
             lz-n
 
-            # icons dependency for lualine, telescope and others
-            mini-icons
             lspkind-nvim
             colorful-menu-nvim
 
@@ -78,6 +76,9 @@
 
           # Anything that you're loading lazily should be put here
           opt = [
+            # icons dependency for lualine, telescope and others
+            mini-icons
+
             # Colorscheme
             catppuccin-nvim
 

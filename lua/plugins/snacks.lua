@@ -3,6 +3,9 @@ return {
     "snacks.nvim",
     priority = 1000,
     lazy = false,
+    before = function()
+        LZN.trigger_load("mini.icons")
+    end,
     after = function()
         require("snacks.nvim").setup({
             picker = { enabled = true },
