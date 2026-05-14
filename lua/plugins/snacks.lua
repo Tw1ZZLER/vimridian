@@ -1,4 +1,4 @@
--- credit: https://www.lazyvim.org/plugins/coding#minipairs
+-- credit: https://www.lazyvim.org/plugins/coding
 return {
     "snacks.nvim",
     priority = 1000,
