@@ -22,8 +22,10 @@ return {
     end,
 
     after = function()
+        -- Lua
         vim.lsp.enable("lua_ls")
 
+        -- Nix
         vim.lsp.config("nixd", {
             cmd = { "nixd" },
             settings = {
