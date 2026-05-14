@@ -14,8 +14,8 @@ function M.in_beamer() return vim.b.vimtex["documentclass"] == "beamer" end
 
 -- general env function
 local function env(name)
-	local is_inside = vim.fn["vimtex#env#is_inside"](name)
-	return (is_inside[1] > 0 and is_inside[2] > 0)
+    local is_inside = vim.fn["vimtex#env#is_inside"](name)
+    return (is_inside[1] > 0 and is_inside[2] > 0)
 end
 
 function M.in_preamble() return not env "document" end
