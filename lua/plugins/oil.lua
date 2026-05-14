@@ -1,8 +1,7 @@
 -- Single-directory, filesystem as a buffer, file explorer
 return {
     "oil.nvim",
-    -- Disable lazy-loading, otherwise won't take over as default file explorer
-    lazy = false,
+    cmd = "Oil",
     keys = {
         {
             "-",
