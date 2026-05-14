@@ -16,11 +16,9 @@ return {
             desc = "Oil (float)",
         },
     },
-    before = function()
-        LZN.trigger_load("mini.icons")
-    end,
+    before = function() LZN.trigger_load "mini.icons" end,
     after = function()
-        require("oil").setup({
+        require("oil").setup {
             default_file_explorer = true,
             columns = {
                 "icon",
@@ -29,6 +27,6 @@ return {
                 -- "mtime",
             },
             watch_for_changes = true,
-        })
+        }
     end,
 }

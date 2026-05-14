@@ -6,22 +6,18 @@ return {
     keys = {
         {
             "<leader>cf",
-            function()
-                require("conform").format({ timeout_ms = 3000 })
-            end,
+            function() require("conform").format { timeout_ms = 3000 } end,
             desc = "Format",
         },
         {
             "<leader>cF",
-            function()
-                require("conform").format({ formatters = { "injected" }, timeout_ms = 3000 })
-            end,
+            function() require("conform").format { formatters = { "injected" }, timeout_ms = 3000 } end,
             mode = { "n", "x" },
             desc = "Format Injected Langs",
         },
     },
     after = function()
-        require("conform").setup({
+        require("conform").setup {
             default_format_opts = {
                 timeout_ms = 3000,
                 async = false, -- not recommended to change
@@ -51,6 +47,6 @@ return {
                 --   prepend_args = { "-i", "2", "-ci" },
                 -- },
             },
-        })
+        }
     end,
 }

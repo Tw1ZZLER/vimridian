@@ -2,7 +2,7 @@ return {
     "tiny-inline-diagnostic.nvim",
     lazy = false,
     after = function()
-        require("tiny-inline-diagnostic").setup({
+        require("tiny-inline-diagnostic").setup {
             preset = "powerline",
 
             -- Make diagnostic background transparent
@@ -127,6 +127,6 @@ return {
                 -- Automatically disable diagnostics when opening diagnostic float windows
                 override_open_float = false,
             },
-        })
+        }
     end,
 }

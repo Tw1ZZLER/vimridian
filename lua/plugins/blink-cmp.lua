@@ -12,12 +12,13 @@ return {
         priority = 500,
         lazy = false,
         before = function()
-            LZN.trigger_load("mini.icons")
-            LZN.trigger_load("lspkind.nvim")
-            LZN.trigger_load("colorful-menu.nvim")
+            LZN.trigger_load "mini.icons"
+            LZN.trigger_load "lspkind.nvim"
+            LZN.trigger_load "colorful-menu.nvim"
+            LZN.trigger_load "luasnip"
         end,
         after = function()
-            require("blink.cmp").setup({
+            require("blink.cmp").setup {
                 snippets = { preset = "luasnip" },
 
                 keymap = {
@@ -45,12 +46,8 @@ return {
                             columns = { { "kind_icon" }, { "label", gap = 1 } },
                             components = {
                                 label = {
-                                    text = function(ctx)
-                                        return require("colorful-menu").blink_components_text(ctx)
-                                    end,
-                                    highlight = function(ctx)
-                                        return require("colorful-menu").blink_components_highlight(ctx)
-                                    end,
+                                    text = function(ctx) return require("colorful-menu").blink_components_text(ctx) end,
+                                    highlight = function(ctx) return require("colorful-menu").blink_components_highlight(ctx) end,
                                 },
 
                                 kind_icon = {
@@ -58,9 +55,7 @@ return {
                                         local icon = ctx.kind_icon
                                         if vim.tbl_contains({ "Path" }, ctx.source_name) then
                                             local dev_icon, _ = require("nvim-web-devicons").get_icon(ctx.label)
-                                            if dev_icon then
-                                                icon = dev_icon
-                                            end
+                                            if dev_icon then icon = dev_icon end
                                         else
                                             icon = require("lspkind").symbolic(ctx.kind, {
                                                 mode = "symbol",
@@ -74,9 +69,7 @@ return {
                                         local hl = ctx.kind_hl
                                         if vim.tbl_contains({ "Path" }, ctx.source_name) then
                                             local dev_icon, dev_hl = require("nvim-web-devicons").get_icon(ctx.label)
-                                            if dev_icon then
-                                                hl = dev_hl
-                                            end
+                                            if dev_icon then hl = dev_hl end
                                         end
                                         return hl
                                     end,
@@ -95,7 +88,7 @@ return {
                 fuzzy = {
                     implementation = "prefer_rust_with_warning",
                 },
-            })
+            }
         end,
     },
 }

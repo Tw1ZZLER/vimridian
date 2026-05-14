@@ -22,27 +22,27 @@ return {
 
     after = function()
         -- Vim diagnostic configuration
-        vim.diagnostic.config{
+        vim.diagnostic.config {
             virtual_text = false, -- tiny inline diagnostic does this instead
             underline = true,
             signs = {
                 text = {
                     [vim.diagnostic.severity.ERROR] = "",
-                    [vim.diagnostic.severity.WARN]  = "",
-                    [vim.diagnostic.severity.INFO]  = "",
-                    [vim.diagnostic.severity.HINT]  = "",
+                    [vim.diagnostic.severity.WARN] = "",
+                    [vim.diagnostic.severity.INFO] = "",
+                    [vim.diagnostic.severity.HINT] = "",
                 },
                 linehl = {
-                    [vim.diagnostic.severity.ERROR] = 'ErrorMsg',
+                    [vim.diagnostic.severity.ERROR] = "ErrorMsg",
                 },
                 numhl = {
-                    [vim.diagnostic.severity.WARN] = 'WarningMsg',
+                    [vim.diagnostic.severity.WARN] = "WarningMsg",
                 },
             },
         }
 
         -- Lua
-        vim.lsp.enable("lua_ls")
+        vim.lsp.enable "lua_ls"
 
         -- Nix
         vim.lsp.config("nixd", {
@@ -58,6 +58,6 @@ return {
                 },
             },
         })
-        vim.lsp.enable("nixd")
+        vim.lsp.enable "nixd"
     end,
 }
