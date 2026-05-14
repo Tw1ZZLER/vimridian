@@ -125,7 +125,7 @@
           minimalConfig.extraBinPath
           ++ (with pkgs; [
             lua-language-server # Lua LSP
-            nil # Nix LSP
+            nixd # Nix LSP
 
             selene # Lua linter
             statix # Nix linter
