@@ -65,9 +65,6 @@
             # Lazy-loading library, an alternative to lazy.nvim
             lz-n
 
-            lspkind-nvim
-            colorful-menu-nvim
-
             # install ALL THE GRAMMARS!!!
             # we dont actually need nvim-treesitter bc we are doing this
             # and the built-in vim.treesitter will handle it
@@ -148,8 +145,8 @@
 
             # Completion
             blink-cmp
-
-            #
+            lspkind-nvim
+            colorful-menu-nvim
             luasnip
 
             # Mega advanced search and replace
