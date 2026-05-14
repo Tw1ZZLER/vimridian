@@ -7,14 +7,14 @@ return {
 
     after = function()
         require("blink.cmp").setup({
-            snippets = { preset = 'luasnip' },
+            snippets = { preset = "luasnip" },
 
             keymap = {
                 preset = "super-tab",
             },
 
             cmdline = {
-                keymap = { preset = 'inherit' },
+                keymap = { preset = "inherit" },
                 completion = { menu = { auto_show = true } },
             },
 
@@ -23,14 +23,13 @@ return {
             },
 
             completion = {
-                trigger = {
-                },
+                trigger = {},
                 documentation = {
                     auto_show = true,
-                    window = { border = 'single' }
+                    window = { border = "single" },
                 },
                 menu = {
-                    border = 'none',
+                    border = "none",
                     draw = {
                         columns = { { "kind_icon" }, { "label", gap = 1 } },
                         components = {
@@ -70,11 +69,11 @@ return {
                                     end
                                     return hl
                                 end,
-                            }
+                            },
                         },
                         -- components = {
                         -- }
-                    }
+                    },
                 },
             },
 
