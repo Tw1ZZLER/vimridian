@@ -33,8 +33,14 @@ return {
             formatters_by_ft = {
                 lua = { "stylua" },
                 nix = { "alejandra" },
-                -- Conform will run multiple formatters sequentially
-                -- python = { "isort", "black" },
+                python = function(bufnr)
+                    if require("conform").get_formatter_info("ruff_format", bufnr).available then
+                        return { "ruff_format" }
+                    else
+                        return { "isort", "black" }
+                    end
+                end,
+
                 -- You can customize some of the format options for the filetype (:help conform.format)
                 -- rust = { "rustfmt", lsp_format = "fallback" },
                 -- Conform will run the first available formatter

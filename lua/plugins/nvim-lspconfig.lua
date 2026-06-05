@@ -59,5 +59,8 @@ return {
             },
         })
         vim.lsp.enable "nixd"
+
+        -- Python LSP
+        vim.lsp.enable "basedpyright"
     end,
 }

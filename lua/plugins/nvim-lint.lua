@@ -4,6 +4,7 @@ return {
         require("lint").linters_by_ft = {
             nix = { "statix" },
             lua = { "selene" },
+            python = { "ruff" },
         }
 
         vim.api.nvim_create_autocmd({ "BufWritePost" }, {
