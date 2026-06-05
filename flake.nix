@@ -150,7 +150,10 @@
             blink-cmp
             lspkind-nvim
             colorful-menu-nvim
+
+            # Snippets
             luasnip
+            friendly-snippets
 
             # Mega advanced search and replace
             grug-far-nvim
