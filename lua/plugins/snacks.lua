@@ -130,7 +130,7 @@ return {
     },
     after = function()
         vim.api.nvim_create_autocmd("User", {
-            pattern = "VeryLazy",
+            pattern = "DeferredUIEnter",
             callback = function()
                 -- Setup some globals for debugging (lazy-loaded)
                 _G.dd = function(...) Snacks.debug.inspect(...) end
