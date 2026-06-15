@@ -131,6 +131,8 @@
 
             stylua # Lua formatter
             alejandra # Nix formatter
+
+            nodejs # Required for copilot-lua
           ]);
 
         plugins.opt =

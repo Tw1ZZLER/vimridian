@@ -1,6 +1,6 @@
 -- Copilot LSP provider and stuff
 return {
-    "copilot-lua",
+    "copilot.lua",
     cmd = "Copilot",
     event = "InsertEnter",
     before = function() end,

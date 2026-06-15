@@ -33,7 +33,7 @@ return {
         { "<leader>at", "<cmd>AvanteToggle<CR>", desc = "Toggle Avante" },
     },
     after = function()
-        require("avante.nvim").setup {
+        require("avante").setup {
             provider = "copilot",
             selection = {
                 hint_display = "none",
