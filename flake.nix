@@ -68,6 +68,7 @@
             # install ALL THE GRAMMARS!!!
             # we dont actually need nvim-treesitter bc we are doing this
             # and the built-in vim.treesitter will handle it
+            # I think the above comment is a lie bc this does install nvim-treesitter
             nvim-treesitter.withAllGrammars
           ];
 
@@ -98,6 +99,7 @@
             oil-nvim
 
             # Image support, dashboard, zen mode, picker, fuzzy finder, lazygit and GH CLI support, etc.
+            # This does like a billion things
             snacks-nvim
           ];
 
@@ -157,6 +159,10 @@
 
             # Mega advanced search and replace
             grug-far-nvim
+
+            # AI Tooling (Cursor-like experience)
+            copilot-lua
+            avante-nvim
           ]);
       };
     in rec {
