@@ -1,0 +1,16 @@
+base: lua51
+lua_versions:
+  - luajit
+
+globals:
+  vim:
+    any: true
+  # Snacks plugin global
+  Snacks:
+    any: true
+  # dd is a global created by Snacks
+  dd:
+    any: true
+  # lz.n global
+  LZN:
+    any: true
