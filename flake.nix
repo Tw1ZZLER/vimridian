@@ -131,8 +131,6 @@
 
             stylua # Lua formatter
             alejandra # Nix formatter
-
-            nodejs # Required for copilot-lua
           ]);
 
         plugins.opt =
@@ -161,10 +159,6 @@
 
             # Mega advanced search and replace
             grug-far-nvim
-
-            # AI Tooling (Cursor-like experience)
-            copilot-lua
-            avante-nvim
           ]);
       };
     in rec {
