@@ -6,14 +6,19 @@
 #    ▒▒▒█████▒    ▒███  ▒███      ▒███  ▒███    ▒███  ▒███  ▒███    ███  ▒███  ▒███    ▒███  ▒███  ▒▒█████
 #      ▒▒███      █████ █████     █████ █████   █████ █████ ██████████   █████ █████   █████ █████  ▒▒█████
 #       ▒▒▒      ▒▒▒▒▒ ▒▒▒▒▒     ▒▒▒▒▒ ▒▒▒▒▒   ▒▒▒▒▒ ▒▒▒▒▒ ▒▒▒▒▒▒▒▒▒▒   ▒▒▒▒▒ ▒▒▒▒▒   ▒▒▒▒▒ ▒▒▒▒▒    ▒▒▒▒▒
-#
-# Vimridian is my Neovim configuration created from the ground up using Gerg-L's
-# minimal neovim wrapper (mnw) for Nix, and the lz.n lazy loading library
-#
-# Vimridian is named after the Between the Buried and Me song, Viridian
-# It is a beautiful song with a bass solo and is the precursor to one of the
-# greatest songs of all time (imo), White Walls
 {
+  description = ''
+    Vimridian is my Neovim configuration using Gerg-L's minimal
+    neovim wrapper (mnw) for Nix, and the lz.n lazy loading library.
+
+    It provides two packages:
+    - A minimal setup with essential plugins for quick use and small download size
+    - A maximal setup with LSP, autocompletion, snippets, formatting, etc. which
+      has a large download size.
+
+    Vimridian is named after the *Between the Buried and Me* song, *Viridian*.
+  '';
+
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs?ref=nixos-unstable";
 
