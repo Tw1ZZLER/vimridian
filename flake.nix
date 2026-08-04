@@ -41,9 +41,9 @@
 
         appName = "nvim";
         aliases = [
-          "vim"
-          "vi"
           "v"
+          "vimr"
+          "vimridian"
         ];
 
         # TODO: Separate init.lua files for minimal vs maximal
